@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --font: 'Lexend Deca', sans-serif;
+  --font-titles: 'Big Shoulders Display', cursive;
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  background-color: var(--very-light-gray);
+}
+
+main {
+  margin: 24rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--font);
+}
+
+.container {
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.col {
+  max-width: 330px;
+}
+
+h1 {
+  font-family: var(--font-titles);
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  padding: 1.9rem 0;
+  font-size: 2.8rem;
+}
+
+p {
+  color: var(--transparent-white);
+  line-height: 1.6rem;
+}
+
+button {
+  border: 2px solid var(--very-light-gray);
+  background-color: var(--very-light-gray);
+  border-radius: 25px;
+  width: 150px;
+  height: 50px;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+button:hover {
+  color: var(--very-light-gray);
+  cursor: pointer;
+}
+
+
+.col__container {
+  padding: 3rem;
+}
+
+.col__1 {
+  background-color: var(--bright-orange);
+}
+
+.col__2 {
+  background-color: var(--dark-cyan);
+}
+
+.col__3 {
+  background-color: var(--very-dark-cyan);
+}
+
+.button__1 {
+  color: var(--bright-orange);
+}
+
+.button__1:hover {
+  background-color: var(--bright-orange);
+}
+
+.button__2 {
+  color: var(--dark-cyan);
+}
+
+.button__2:hover {
+  background-color: var(--dark-cyan);
+}
+
+.button__3 {
+  color: var(--very-dark-cyan);
+}
+
+.button__3:hover {
+  background-color: var(--very-dark-cyan);
+}
+
+@media only screen and (min-width: 1180px){
+  main {
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .col {
+    max-width: 306px;
+  }
+
+  p {
+    padding-right: 0.5rem;
+  }
+
+  button {
+    margin-top: 5.6rem;
+  }
+}
